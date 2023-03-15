@@ -2,7 +2,7 @@ body{
     background-color: #4551b5;
 }
 
-header{
+header, .alert{
     z-index: 100;
 }
 
@@ -42,4 +42,8 @@ header{
     font-weight: 700;
     margin-right: 30px;
     margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
 }
