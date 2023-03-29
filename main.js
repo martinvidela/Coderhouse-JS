@@ -5,6 +5,10 @@ let carrito = []
 Clickbutton.forEach(btn => {
   btn.addEventListener('click', addToCarritoItem)
 })
+const showAlert = () =>{
+  Swal.fire('Enhorabuena!', 'Compra realizada con exito!', 'success')
+}
+
 
 //FUNCION PARA AGREGAR AL CARRO
 function addToCarritoItem(e){
@@ -132,3 +136,7 @@ window.onload = function(){
     renderCarrito()
   }
 }
+
+const botoncomprar = document.querySelector('.botoncomprar')
+botoncomprar.onclick = showAlert
+
